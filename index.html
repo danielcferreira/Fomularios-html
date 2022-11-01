@@ -17,23 +17,71 @@
       <section>
           <h2>Cadastro</h2>
           <form action="obrigado.html">
+            <!--aqui é a caixa para nomes e seus paramentros -->
             <div>
                 <label for="ctrl-name">Nome</label>
                 <input id="ctrl-name"  name="name" type="text" placeholder="Digite seu nome">
             </div>
 
+            <!--aqui é a caixa para email e seus paramentros -->
             <div>
                 <label for="ctrl-name">Email</label>
                 <input id="ctrl-Email"  name="Email" type="text" placeholder="Digite seu Email">
             </div>
 
+            <!--aqui é a caixa para senha e seus paramentros -->
             <div>
                 <label for="ctrl-name">Senha</label>
                 <input id="ctrl-password"  name="ctrl-password" type="password" placeholder="Digite seu senha">
             </div>
+
+            <!--aqui é a caixa para selecionar cidade e seus paramentros -->
+            <div>
+                <label for="ctrl-city">Cidade</label>
+                <select name="city" id="ctrl-city">
+                 <option value="1">Brasilia</option>
+                 <option value="2">Rio de Janeiro</option>
+                 <option value="3">São Paulo</option>
+                 <option value="4">Maranhão</option>
+                </select>
+            </div>
+            <!--aqui é a caixa para selecionar cidade e seus paramentros 
+            so se pode escolher uma por vez por estarem com o mesmo nome -->
+            <div>
+                <label for="ctrl-level">Escolaridade</label>
+                <div>
+                  <input type="radio" name="level" id="ctrl-level-1">
+                  <label for="ctrl-level-1">Fundamental</label>
+                
+                  <input type="radio" name="level" id="ctrl-level-2">
+                  <label for="ctrl-level-2">Medio</label>
+                 
+                  <input type="radio" name="level" id="ctrl-level-3">
+                  <label for="ctrl-level-3">Superior</label>
+               </div>
+             </div>
+
+             <div>
+                 <label for="ctrl-languages"> Liguagens que você conhece</label>
+                 <div>
+                  <input id="ctrl-languages" name="language1" type="checkbox" > 
+                  <label for="crtl-languages-java">Java</label>
+
+                  <input id="ctrl-languages" name="language1" type="checkbox" > 
+                  <label for="crtl-languages-php">PHP</label>
+
+                  <input id="ctrl-languages" name="language1" type="checkbox" > 
+                  <label for="crtl-languages-c++">C++</label>
+
+                  <input id="ctrl-languages" name="language1" type="checkbox" > 
+                  <label for="crtl-languages-csharp">C#</label>
+                 </div> 
+             </div>
            
-             
+             <!--aqui é a caixa para subimit e seus paramentros -->
             <input type="Submit" value="Enviar">
+
+            <!--aqui é a caixa para resetar e seus paramentros -->
             <input type="reset">
           </form>
       </section>
